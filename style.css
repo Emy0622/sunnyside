@@ -103,3 +103,119 @@ header h1 {
 .line-yellow {
     background-color: var(--yellow);
 }
+
+
+.line {
+    position: absolute;
+    height: 8px;
+    width: 110%;
+    left: -5%;
+    bottom: 1%;
+    z-index: -1;
+    opacity: .5;
+    border-radius: 10px;
+}
+
+.line-red {
+    background-color: var(--red);
+}
+
+.container {
+    background-color: tomato;
+    height: 600px;
+    background-size: cover;
+}
+
+.container.graphic {
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+}
+
+.container.graphic * {
+    color: var(--graphic-text);
+}
+
+.container.photography {
+    background-image: url(./images/mobile/image-photography.jpg);
+}
+
+.container.photography * {
+    color: var(--photography-text);
+}
+
+.container .description {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.testimonials {
+    display: grid;
+    place-items: center;
+}
+
+.testimonial-text {
+    font-family: var(--title-font);
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.testimonial-title {
+    font-family: var(--title-font);
+    font-size: 1rem;
+    color: var(--gray);
+    padding: 32px 0px;
+    letter-spacing: .2rem;
+}
+
+.client__avatar {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.client__avatar:nth-child(1) {
+    background-image: url(./images/image-emily.jpg);
+}
+
+.client__avatar.client2 {
+    background-image: url(./images/image-thomas.jpg);
+}
+
+.client__avatar.client3 {
+    background-image: url(./images/image-jennie.jpg);
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    height: 400px;
+    text-align: center;
+}
+
+.client__text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gray);
+    opacity: .7;
+    line-height: 1.5rem;
+    padding: 0px 16px;
+}
+
+.client__name {
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.client__job {
+    color: var(--gray);
+    font-weight: 600;
+    padding: 16px;
+}
