@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol, li{
+    list-style: none;
+}
+
 :root {
     --text-font: 'Barlow', sans-serif;
     --title-font: 'Fraunces', serif;
@@ -116,106 +124,143 @@ header h1 {
     border-radius: 10px;
 }
 
-.line-red {
-    background-color: var(--red);
+.line-red{
+
+    background-color: var(--red) ;
+
 }
 
-.container {
+.container{
     background-color: tomato;
     height: 600px;
     background-size: cover;
+
 }
 
-.container.graphic {
+.container.graphic{
     background-image: url(./images/mobile/image-graphic-design.jpg);
+ 
+   
 }
 
-.container.graphic * {
+.container.photography{
+    background-image: url(./images/mobile/image-photography.jpg);
+   
+}
+
+.container.graphic *{
     color: var(--graphic-text);
 }
 
-.container.photography {
-    background-image: url(./images/mobile/image-photography.jpg);
-}
-
-.container.photography * {
+.container.photography *{
     color: var(--photography-text);
 }
 
-.container .description {
+.container .description{
     height: 100%;
     display: flex;
-    justify-content: end;
     flex-direction: column;
-    gap: 16px;
+    justify-content: end;
 }
 
-.testimonials {
+.testimonials{
     display: grid;
     place-items: center;
 }
 
-.testimonial-text {
+.testimonials-title{
     font-family: var(--title-font);
-    font-size: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
     color: var(--gray);
+    padding: 64px 0;
 }
 
-.testimonial-title {
-    font-family: var(--title-font);
-    font-size: 1rem;
-    color: var(--gray);
-    padding: 32px 0px;
-    letter-spacing: .2rem;
+
+.client__avatar.client1{
+    background-image: url(./images/image-emily.jpg);
+   
 }
 
-.client__avatar {
+.client__avatar.client2{
+    background-image: url(./images/image-thomas.jpg);
+}
+
+.client__avatar.client3{
+    background-image: url(./images/image-jennie.jpg);
+}
+
+.client__avatar{
     width: 76px;
     height: 76px;
     border-radius: 50%;
     background-position: center;
-    background-size: cover;
 }
 
-.client__avatar:nth-child(1) {
-    background-image: url(./images/image-emily.jpg);
-}
-
-.client__avatar.client2 {
-    background-image: url(./images/image-thomas.jpg);
-}
-
-.client__avatar.client3 {
-    background-image: url(./images/image-jennie.jpg);
-}
-
-.client {
+.client{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 24px;
-    height: 400px;
+    gap: 10px;
+    height: 300px;
     text-align: center;
 }
 
-.client__text {
+.client__text{
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--gray);
     opacity: .7;
-    line-height: 1.5rem;
+    line-height: 2rem;
     padding: 0px 16px;
 }
 
-.client__name {
+.client__name{
     font-family: var(--title-font);
     font-size: 1.2rem;
     font-weight: 900;
 }
 
-.client__job {
+.client__job{
     color: var(--gray);
     font-weight: 600;
     padding: 16px;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.images img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    background-color: #90D4C5;
+    color: var(--footer);
+}
+
+footer h2{
+    font-size: 2.2rem;
+    font-weight: 900;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    font-weight: 600;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
 }
